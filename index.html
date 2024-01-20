@@ -2273,8 +2273,6 @@ We've detected ad blocker!
 </script>
 <script>
 	
-// Register popup components globally
-Vue.component('display-ad', createDisplayAdComponent('#display-ad-template'));
 
 function createDisplayAdComponent(templateId) {
 	return { 
@@ -2778,8 +2776,6 @@ var comp_spinner_overlay = {
 </script>
 <script>
 // Register popup components globally
-Vue.component('small-popup', createPopupComponent('#small-popup-template'));
-Vue.component('large-popup', createPopupComponent('#large-popup-template'));
 
 function createPopupComponent(templateId) {
 	return { 
@@ -3117,8 +3113,6 @@ function createPopupComponent(templateId) {
             }
         }
     }
-
-    Vue.component('house-ad', createHouseAd());
 
 </script><script id="language-selector-template" type="text/x-template">
     <select id="pickLanguage" v-model="languageCode" @change="onChangeLanguage" class="ss_select ss_marginright_sm">
